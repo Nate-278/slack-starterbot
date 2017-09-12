@@ -7,7 +7,8 @@ from slackclient import SlackClient
 BOT_ID = os.environ.get("BOT_ID")
 
 # constants
-AT_BOT = "<@" + BOT_ID + ">"
+BOT_ID_STRING = str(BOT_ID)
+AT_BOT = "<@" + BOT_ID_STRING + ">"
 EXAMPLE_COMMAND = "do"
 
 # instantiate Slack & Twilio clients
